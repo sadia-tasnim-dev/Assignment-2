@@ -105,6 +105,12 @@ header a {
   font-weight: 700;
   color: #424247;
 }
+/* .nav-items {
+  display: block;
+} */
+.menu {
+  display: none;
+}
 /* ------------nav--------------- */
 /* ------------hero--------------- */
 .hero-container {
@@ -305,14 +311,15 @@ header a {
 }
 .discounts-container {
   background-color: var(--primary-color);
-  width: 320px;
+  width: 280px;
   text-align: center;
   color: white;
   padding: 20px 0;
   border-radius: 16px;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 40px;
+  right: 5px;
+  transform: rotate(-20deg);
 }
 .discounts-container h4 {
   font-weight: 400;
@@ -320,4 +327,44 @@ header a {
   margin-bottom: 8px;
 }
 /* ----------Newsletter section------------ */
+/* ----------footer section------------ */
+.footer {
+  background-color: var(--footer-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 110px 0;
+}
+.footer-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(184, 184, 184);
+  margin: 50px 0;
+}
+.footer img {
+  margin-top: 33px;
+}
+.footer h5 {
+  font-size: 16px;
+  font-weight: 300;
+}
+/* ----------footer section------------ */
 /* ------------Main Component Class--------------- */
+/* ----------Responsive Design for mobile------------ */
+@media only screen and (max-width: 600px) {
+  .nav-items {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+/* ----------Responsive Design for mobile------------ */
