@@ -363,8 +363,16 @@ header a {
   .nav-items {
     display: none;
   }
+  .container {
+    padding: 20px;
+  }
   .menu {
     display: block;
   }
 }
+.hero-input-container {
+  grid-template-columns: 1fr;
+  height: 100%;
+}
+
 /* ----------Responsive Design for mobile------------ */
